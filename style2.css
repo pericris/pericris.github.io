@@ -1,3 +1,30 @@
+/* Force gallery strips to 3 images per row */
+.gallery-strips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-strips-item {
+  width: 33.3333% !important;
+}
+
+/* Optional: spacing consistency */
+.gallery-strips-item-wrapper {
+  padding: 0;
+}
+/* Tablets: 2 per row */
+@media screen and (max-width: 1024px) {
+  .gallery-strips-item {
+    width: 50% !important;
+  }
+}
+
+/* Mobile: 1 per row */
+@media screen and (max-width: 640px) {
+  .gallery-strips-item {
+    width: 100% !important;
+  }
+}
 /* Button Block Base Style
 =================================================*/
 .sqs-block-button-container {
@@ -8179,31 +8206,4 @@ _:-ms-fullscreen .clipIn:not([data-override-initial-global-animation]),
 .related-products .products-flex-container {
   display: flex;
   flex-direction: column;
-}
-/* Force gallery strips to 3 images per row */
-.gallery-strips {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery-strips-item {
-  width: 33.3333% !important;
-}
-
-/* Optional: spacing consistency */
-.gallery-strips-item-wrapper {
-  padding: 0;
-}
-/* Tablets: 2 per row */
-@media screen and (max-width: 1024px) {
-  .gallery-strips-item {
-    width: 50% !important;
-  }
-}
-
-/* Mobile: 1 per row */
-@media screen and (max-width: 640px) {
-  .gallery-strips-item {
-    width: 100% !important;
-  }
 }
